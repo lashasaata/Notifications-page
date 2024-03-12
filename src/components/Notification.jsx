@@ -7,7 +7,7 @@ function Notification(props) {
     props.setnewData(clone);
   }
   return (
-    <div className="flex items-center">
+    <div className="flex items-center mb-[14px]">
       <h1 className="text-xl font-extrabold text-gray-900 lg: text-2xl">
         Notifications
       </h1>
