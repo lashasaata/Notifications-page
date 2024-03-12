@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="flex items-center justify-center min-w-full min-h-screen bg-[#f9fafd]">
-      <main className="flex flex-col items-center bg-white pt-6 pb-7">
+      <main className="flex flex-col items-center bg-white pt-6 lg:pt-[33px] pb-7 lg:pb-[0px] px-4 lg:px-[30px] lg:my-16">
         <Notification newData={newData} setnewData={setnewData} />
         <Message newData={newData} setnewData={setnewData} />
         <div></div>
