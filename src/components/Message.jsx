@@ -25,7 +25,7 @@ function Message(props) {
         <div>
           <div className="flex gap-[33px] lg:gap-[0px] lg:w-[566px] lg:justify-between">
             <p className="leading-[18px]">
-              <span className="text-sm lg:text-base font-extrabold text-[#1c202b]">
+              <span className="text-sm lg:text-base font-extrabold text-[#1c202b] hover:text-[#0a327b] hover:cursor-pointer">
                 {item.author}
               </span>
               <span className="text-sm lg:text-base font-medium text-[#5e6778] ml-1.5">
@@ -42,8 +42,8 @@ function Message(props) {
                       className={
                         item.type == "left the group" ||
                         item.type == "has joined your group"
-                          ? `text-[#0a327b] text-sm lg:text-base font-extrabold ml-1.5`
-                          : `text-[#5e6778] text-sm lg:text-base font-bold ml-1.5`
+                          ? `text-[#0a327b] text-sm lg:text-base font-extrabold ml-1.5 hover:cursor-pointer`
+                          : `text-[#5e6778] text-sm lg:text-base font-bold ml-1.5 hover:text-[#0a327b] hover:cursor-pointer`
                       }
                     >
                       {item.content}
@@ -60,7 +60,7 @@ function Message(props) {
             {item.content.includes(".webp") ? (
               <img
                 src={`${item.content}`}
-                className="w-8 lg:w-[45px] h-8 lg:h-[45px] ml-3"
+                className="w-8 lg:w-[45px] h-8 lg:h-[45px] ml-3 hover:cursor-pointer"
               />
             ) : (
               ""
@@ -70,7 +70,7 @@ function Message(props) {
             {item.time}
           </span>
           {item.type == "sent you a private message" ? (
-            <p className="w-[263px] lg:w-[566px] p-4 lg:p-5 lg:pt-[17px] border border-solid border-[#dde7ee] mt-3 lg:mt-[13px] text-sm lg:text-base text-[#5e6778] font-[500]">
+            <p className="w-[263px] lg:w-[566px] p-4 lg:p-5 lg:pt-[17px] border border-solid border-[#dde7ee] mt-3 lg:mt-[13px] text-sm lg:text-base text-[#5e6778] font-[500] hover:bg-[#e5effa] hover:cursor-pointer">
               {item.content}
             </p>
           ) : (

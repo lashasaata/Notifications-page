@@ -16,7 +16,7 @@ function Notification(props) {
       </span>
       <span
         onClick={markAsRead}
-        className="text-sm lg:text-base font-medium text-gray-700 ml-[74px] lg:ml-[356px]"
+        className="text-sm lg:text-base font-medium text-gray-700 ml-[74px] lg:ml-[356px] hover:text-[#0a327b] hover:cursor-pointer"
       >
         Mark all as read
       </span>
